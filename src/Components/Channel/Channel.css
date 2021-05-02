@@ -1,0 +1,29 @@
+.channel {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: calc(100% - 0.75rem);
+    height: 2.5rem;
+    /* position: absolute; */
+    font-size: 1rem;
+    font-weight: bold;
+    /* border-bottom: 1px solid var(--border); */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.25rem 0.25rem 0 0.5rem;
+}
+
+.channel:hover {
+    opacity: 2;
+    color: var(--text-hover);
+    background-color: var(--bg-hover);
+}
+
+.channel__name {
+    padding-left: 0.5rem;
+}
+.channel__icon {
+    padding-left: 1rem;
+    font-size: 1.5rem !important;
+    width: 1.5rem
+}

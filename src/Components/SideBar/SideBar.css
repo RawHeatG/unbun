@@ -1,7 +1,7 @@
 .sidebar{
     position: fixed;
     width: 25vw;
-    max-width: 350px;
+    max-width: 300px;
     min-width: 250px;
     height: 100vh;
     display: flex;
@@ -15,11 +15,19 @@
 .sidebar__header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-    height: 3rem;
-    position: absolute;
+    height: 4rem;
+    /* position: absolute; */
     font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid var(--border);
+}
+
+.sidebar__header h2 {
+    font-size: 1.5rem;
+}
+
+.sidebar__header .MuiSvgIcon-root {
+    font-size: 2rem;
 }
