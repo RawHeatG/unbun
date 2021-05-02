@@ -3,7 +3,6 @@ import { Channel } from "../../Components";
 import { db } from "../../Firebase/firebase";
 import "./SideBar.css";
 import BarChartRoundedIcon from "@material-ui/icons/BarChartRounded";
-import ChatRoundedIcon from "@material-ui/icons/ChatRounded";
 import AddRoundedIcon from "@material-ui/icons/AddRounded";
 
 export function SideBar() {
