@@ -13,6 +13,11 @@
     margin: 0.25rem 0.25rem 0 0.5rem;
 }
 
+Link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .channel:hover {
     opacity: 2;
     color: var(--text-hover);
