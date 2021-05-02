@@ -30,8 +30,6 @@ export function Chat() {
     }
   }, [channelId]);
 
-  // console.log(channelMessages);
-
   return (
     <div className="chat">
       <div className="chat__header">
@@ -44,7 +42,7 @@ export function Chat() {
       </div>
       <div className="chat__messages">
         {channelMessages &&
-          channelMessages.map((msg) => <Message message={msg} />)}
+          channelMessages.map((message) => <Message msg={message} />)}
       </div>
       {/* Chat Send */}
       {/* Chat Footer */}

@@ -1,0 +1,27 @@
+.message {
+    display: flex;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.message__user__img {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.message__details {
+    margin: 0 4rem;
+}
+
+.message__user__details {
+    display: flex;
+    align-items: center;
+}
+
+.message_user__details__timestamp{
+    color: var(--text-timestamp);
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
