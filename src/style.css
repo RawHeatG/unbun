@@ -6,6 +6,7 @@
 
 :root{
     font-family:'Quicksand', sans-serif;
+    --primary: #6c84d9;
     --sidebar-bg: #2f3136;
     --sidebar-footer-bg: #292b2f;
     --chat-bg: #36393f;
