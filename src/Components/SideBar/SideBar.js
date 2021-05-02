@@ -29,6 +29,9 @@ export function SideBar() {
       {channels.map((channel) => (
         <Channel name={channel.name} id={channel.id} />
       ))}
+      <div className="sidebar__footer">
+        <h2>SideBar footer</h2>
+      </div>
     </div>
   );
 }

@@ -7,12 +7,14 @@
 :root{
     font-family:'Quicksand', sans-serif;
     --sidebar-bg: #2f3136;
+    --sidebar-footer-bg: #292b2f;
     --chat-bg: #36393f;
     --text-active: #fff;
     --text-hover: #dcddde;
     --text-inactive: #747f8d;
     --bg-default: #202225;
     --bg-hover: #393c43;
+    
     --border: #232527;
 
     background-color: var(--bg-default);
