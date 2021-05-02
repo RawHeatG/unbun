@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root{
+    font-family:'Quicksand', sans-serif;
+    --sidebar-bg: #2f3136;
+    --chat-bg: #36393f;
+    --text-inactive: #747f8d;
+    --default-bg: #202225;
+    --border: #232527;
+
+    background-color: var(--default-bg);
+    color: white;
+}
+
+.App{
+    display: flex;
+}

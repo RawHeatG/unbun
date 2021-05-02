@@ -1,0 +1,25 @@
+.sidebar{
+    position: fixed;
+    width: 25vw;
+    max-width: 350px;
+    min-width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.3;
+    background-color: var(--sidebar-bg);
+    color: var(--text-inactive);
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+}
