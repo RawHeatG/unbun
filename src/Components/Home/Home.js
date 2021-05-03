@@ -1,6 +1,24 @@
+import { auth, provider } from "../../Firebase/firebase";
+import { useAuth } from "../../Contexts/AuthProvider";
+import { Link, Navigate } from "react-router-dom";
 import "./Home.css";
 
 export function Home() {
+  const { user, loginUser } = useAuth();
+  async function Login() {
+    try {
+      const response = await auth.signInWithPopup(provider);
+      loginUser(response);
+    } catch (error) {
+      alert("!!!Error!!! ", error);
+    }
+  }
+
+  const redirect = () => {
+    console.log("redirect works");
+    return <Navigate to="/channel" />;
+  };
+
   return (
     <div className="home">
       <div className="defination">
@@ -14,6 +32,16 @@ export function Home() {
           "Let's move onto Unbun, to remove the unbun between us"
         </p>
       </div>
+      {!user.user && (
+        <button className="signin-button" onClick={Login}>
+          Sign-in with Google
+        </button>
+      )}
+      {user.user && (
+        <Link to="/channel" className="link">
+          <button className="signin-button">Let's Unbun</button>
+        </Link>
+      )}
     </div>
   );
 }
