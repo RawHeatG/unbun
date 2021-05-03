@@ -1,6 +1,6 @@
 import { auth, provider } from "../../Firebase/firebase";
 import { useAuth } from "../../Contexts/AuthProvider";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export function Home() {
@@ -13,11 +13,6 @@ export function Home() {
       alert("!!!Error!!! ", error);
     }
   }
-
-  const redirect = () => {
-    console.log("redirect works");
-    return <Navigate to="/channel" />;
-  };
 
   return (
     <div className="home">

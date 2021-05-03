@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { db } from "../../Firebase/firebase";
 import { Message } from "../../Components";
+import { SideBar } from "../../Components";
 import "./Chat.css";
 
 export function Chat() {
@@ -31,21 +32,24 @@ export function Chat() {
   }, [channelId]);
 
   return (
-    <div className="chat">
-      <div className="chat__header">
-        <div className="chat__header__left"># {channelDetails?.name}</div>
-        <div className="chat__header__right">
-          <NotificationsRoundedIcon />
-          <BookmarksRoundedIcon />
-          <PeopleAltRoundedIcon />
+    <>
+      <SideBar />
+      <div className="chat">
+        <div className="chat__header">
+          <div className="chat__header__left"># {channelDetails?.name}</div>
+          <div className="chat__header__right">
+            <NotificationsRoundedIcon />
+            <BookmarksRoundedIcon />
+            <PeopleAltRoundedIcon />
+          </div>
         </div>
+        <div className="chat__messages">
+          {channelMessages &&
+            channelMessages.map((message) => <Message msg={message} />)}
+        </div>
+        {/* Chat Send */}
+        {/* Chat Footer */}
       </div>
-      <div className="chat__messages">
-        {channelMessages &&
-          channelMessages.map((message) => <Message msg={message} />)}
-      </div>
-      {/* Chat Send */}
-      {/* Chat Footer */}
-    </div>
+    </>
   );
 }
