@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root{
+    font-family:'Quicksand', sans-serif;
+    --primary: #6c84d9;
+    --sidebar-bg: #2f3136;
+    --sidebar-footer-bg: #292b2f;
+    --chat-bg: #36393f;
+    --text-active: #fff;
+    --text-hover: #dcddde;
+    --text-inactive: #747f8d;
+    --text-timestamp: #72767d;
+    --bg-default: #202225;
+    --bg-hover: #393c43;
+    
+    --border: #232527;
+
+    background-color: var(--bg-default);
+    color: white;
+}
+
+.App{
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
